@@ -51,7 +51,6 @@ Pitching our 4 week long project to New Zealand executives which imitates a prof
 - GitHub: https://github.com/Silloh23  
 - LinkedIn: www.linkedin.com/in/
 hollis-l-95a014371
-
 - Email: apskt347656@gmail.com 
 
 ---

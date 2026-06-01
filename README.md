@@ -29,7 +29,12 @@ Here are some of the technologies I work with:
 Check out some of my work below:
 
 - 🔹 f1_race_sim GitHub: https://github.com/Silloh23/f1_race_sim
-Built a probabilistic race strategy simulation system combining time-series forecasting and Monte Carlo decision evaluation to model optimal pit stop strategies under uncertainty
+Built a modular race strategy simulation system modelling lap-time evolution, tire degradation, pit-stop loss, and stochastic race noise to simulate realistic Formula 1 race environments
+Implemented a Monte Carlo simulation engine (500 runs per strategy) to estimate probabilistic race outcomes and performance distributions under uncertainty
+Developed a strategy optimisation framework using Optuna, performing black-box search over pit-stop timing strategies to minimise expected race completion time
+Designed and integrated uncertainty quantification using 95% confidence intervals, enabling statistically robust comparison between competing race strategies
+Analysed strategy performance using distributional metrics (mean, variance, confidence intervals) to support risk-aware decision-making rather than single-run evaluation
+Built a physics-inspired simulation model incorporating tire degradation dynamics and pit-stop time penalties to approximate real-world racing behaviour
 
 - 🔹 bot_racers GitHub: https://github.com/Silloh23/bot-racers
 Engineered an evolutionary training pipeline using a Genetic Algorithm (selection, crossover, mutation) to optimise racing agents

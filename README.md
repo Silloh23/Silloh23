@@ -12,15 +12,18 @@ Computer Science student at the University of Bath (graduating 2029), building t
 ## Experience
  
 **AI Engineering Intern, RapportAI Medical** — *Ongoing*
-- Building search infrastructure for a clinical transcription platform: designed and shipped a full-text accession-number search feature (FastAPI, DynamoDB, AWS ECS), including doctor- and org-scoped access control, index provisioning, and data backfill migrations
-- Debugging a hill-climbing rota scheduler for A&E doctor shift assignment, now moving toward a constraint-programming (OR-Tools CP-SAT) rewrite
+- Shipped full-text search feature for a clinical transcription platform using FastAPI, DynamoDB, and GSI design, backfilling 813/824 records (98.7%) for org-level multi-tenancy with zero service disruption
+- Built a PHI-safe ASR evaluation pipeline in Python for Cantonese/English clinical radiology dictation, benchmarking 6 STT systems using exact mixed-script alignment, OpenCC normalization, and measurement-specific F1 scoring, identifying the top performer with a 16.7% relative WER reduction and 10% higher measurement F1 compared to baseline
+- Independently identified the hill-climbing scheduler as unreliable and led its re-architecture to Google OR-Tools CP-SAT. Replacing heuristic approximations with mathematically-proven optimal results, integrated via a feature-flagged async job pipeline into a live Node.js/React application
+- Introduced automated testing into a GitHub Actions CI/CD pipeline as a merge-gating check and integrated support for a new clinical audio file format (DS2), improving release quality and platform interoperability
+
   
 **Machine Learning Intern, AWS**
 - Built a classification model on a 46,000-sample dataset, improving accuracy by 24% using logistic regression, decision trees, and neural networks
 - Presented project outcomes to industry stakeholders following a 4-week build
 ## Research
  
-- Contributing to a Cantonese/Chinese question-answering dataset accepted at EMNLP 2026
+- Authored 112 culturally grounded Hong Kong Cantonese QA pairs for an NLP research dataset accepted at EMNLP 2026 and quality-checked 13 teammate-authored entries for factual accuracy, translation quality, sourcing, and duplication
 
 ## Featured Projects
 
